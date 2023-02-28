@@ -39,5 +39,5 @@ This repository will contain every piece of material about the subject. It will 
 
 ## Contact
 
-* Trainer: trainer@mail.com
-* Assistant: assistant@mail.com
+* Trainer: risto.panchevski@gmail.com
+* Assistant: stojanovska_tijana@outlook.com
