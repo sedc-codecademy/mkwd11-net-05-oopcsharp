@@ -40,4 +40,4 @@ This repository will contain every piece of material about the subject. It will 
 ## Contact
 
 * Trainer: trajanstevkovski@gmail.com
-* Assistant: dmanasakov@gmail.com
+* Assistant: dmanaskov@gmail.com
