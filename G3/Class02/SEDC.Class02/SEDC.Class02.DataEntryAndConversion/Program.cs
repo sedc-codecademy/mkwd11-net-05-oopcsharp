@@ -21,3 +21,13 @@ string number = Console.ReadLine();
 
 //Console.WriteLine(parsedDouble);
 
+int parsedInteger = 0;
+bool isValidParsing = int.TryParse(number, out parsedInteger);
+
+Console.WriteLine(isValidParsing);
+Console.WriteLine(parsedInteger);
+
+bool isValidNumber = int.TryParse(number, out int value);
+
+Console.WriteLine(isValidNumber);
+Console.WriteLine(value);
