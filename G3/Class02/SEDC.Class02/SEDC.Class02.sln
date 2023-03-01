@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Class02.DataTypes", "SEDC.Class02.DataTypes\SEDC.Class02.DataTypes.csproj", "{650965A0-D761-4898-BDE2-28BCF9DD332E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Class02.DataEntryAndConversion", "SEDC.Class02.DataEntryAndConversion\SEDC.Class02.DataEntryAndConversion.csproj", "{463905E7-3584-4F94-ABA8-CE10C0956E21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{650965A0-D761-4898-BDE2-28BCF9DD332E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{650965A0-D761-4898-BDE2-28BCF9DD332E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{650965A0-D761-4898-BDE2-28BCF9DD332E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{463905E7-3584-4F94-ABA8-CE10C0956E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{463905E7-3584-4F94-ABA8-CE10C0956E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{463905E7-3584-4F94-ABA8-CE10C0956E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{463905E7-3584-4F94-ABA8-CE10C0956E21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

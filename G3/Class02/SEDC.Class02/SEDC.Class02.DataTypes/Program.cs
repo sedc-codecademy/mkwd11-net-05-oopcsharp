@@ -46,3 +46,45 @@ var name = "Trajan";
 
 DateTime date = DateTime.Now;
 Console.WriteLine(date);
+
+
+
+// operators
+
+int sumOfTwoNumbers = 5 + 2;
+
+int num1 = 20000;
+int num2 = 20000;
+
+int sumOfNums = num1 + num2;
+
+//short a = 20000;
+//short b = 20000;
+
+// short c = a + b;
+
+int a = 1;
+a++;
+a += 1;
+
+a = a + 1;
+
+bool isValid1 = true;
+bool hasPassed1 = false;
+
+isValid1 &= hasPassed1;
+
+isValid1 = isValid1 && hasPassed1;
+
+bool isSame = 5 == 5;
+//bool isSame2 = 5 == "5"; // cannot compare different types
+
+
+// default values
+
+int defaultInt = default; // 0
+bool defaultBool = default; // false
+
+char defaultChar = default; // Null character, shows up as nothing ( Not to be confused with null ) 
+
+string defaultString = default; // null
