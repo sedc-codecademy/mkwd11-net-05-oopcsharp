@@ -27,7 +27,7 @@
                 return;
             }
 
-            for(int i  = number2; i > -1; i--)
+            for(int i  = number2; i > 0; i--)
             {
                 Console.WriteLine(i);
             }
