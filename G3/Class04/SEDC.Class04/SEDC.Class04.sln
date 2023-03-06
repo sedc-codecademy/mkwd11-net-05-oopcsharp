@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Class04.Methods01", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Class04.StringAndStringMethods", "SEDC.Class04.StringAndStringMethods\SEDC.Class04.StringAndStringMethods.csproj", "{01E6F70A-627B-4B0C-B6B8-5229B1FFC1F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Class04.DateAndTime", "SEDC.Class04.DateAndTime\SEDC.Class04.DateAndTime.csproj", "{E7FEE1D1-555A-4656-8E03-B6FE16B61BAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{01E6F70A-627B-4B0C-B6B8-5229B1FFC1F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01E6F70A-627B-4B0C-B6B8-5229B1FFC1F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01E6F70A-627B-4B0C-B6B8-5229B1FFC1F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7FEE1D1-555A-4656-8E03-B6FE16B61BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7FEE1D1-555A-4656-8E03-B6FE16B61BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7FEE1D1-555A-4656-8E03-B6FE16B61BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7FEE1D1-555A-4656-8E03-B6FE16B61BAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
