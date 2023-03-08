@@ -65,4 +65,27 @@ else
 {
     Console.WriteLine("Wrong parsed");
 }
+
+
+Console.WriteLine("===== Formating datetime =======");
+
+DateTime today = DateTime.Now;
+
+string dateFormatOne = today.ToString("MM/dd/yyyy");// 03/08/2023
+Console.WriteLine(dateFormatOne);
+string dateFormat2 = today.ToString("dd.MM.yyyy");// 08.03.2023
+Console.WriteLine(dateFormat2);
+string dateFormat3 = today.ToString("dddd,  dd.MM.yyyy");// Wednesday, 08.03.2023
+Console.WriteLine(dateFormat3);
+string dateFormat4 = today.ToString("dd-MM-yyyy HH:mm");// 08-03-2023 17:59
+Console.WriteLine(dateFormat4);
+#endregion
+
+#region Exercise 4
+DateTime todayExercise = DateTime.Today;
+Console.WriteLine(todayExercise.AddDays(3));// 3/11/2023
+Console.WriteLine(todayExercise.AddMonths(1).AddDays(3));// 4/11/2023
+Console.WriteLine(todayExercise.AddYears(-1).AddMonths(-2));// 1/8/2022
+Console.WriteLine(todayExercise.ToString("MMMM"));//March
+Console.WriteLine(todayExercise.ToString("yyyy"));//2023
 #endregion
