@@ -126,7 +126,6 @@ Console.WriteLine($"Annonymous object: {annonymousObj.FirstName} {annonymousObj.
 
 #endregion
 
-
 #region Static Classes
 
 // We cannot create objects out of static class, we use it directly
@@ -141,5 +140,59 @@ Console.WriteLine($"Annonymous object: {annonymousObj.FirstName} {annonymousObj.
 // Proper use of static methods
 Math.Round(100.1);
 ConsoleHelper.Separator();
+
+#endregion
+
+#region Null Handling
+
+// Jim & 25 => Proveruva vo baza => Ako ne najde takov person ke vrati null
+Person nobody = null;
+Product nothing = null;
+
+void BuyProductWithoutNullHandling(Person person, Product product)
+{
+    person.Talk($"{person.Name} is buying {product.Name}");
+    person.BuyProduct(product);
+}
+
+// Throws error
+//BuyProductWithoutNullHandling(nobody, nothing);
+
+
+void BuyProductWithNullHandling(Person person, Product product)
+{
+    if (person == null) person = new Person("Unknown", 20);
+    if (product == null) product = new Product("Unknown", 0);
+
+    person.Talk($"{person.Name} is buying {product.Name}");
+    person.BuyProduct(product);
+}
+
+//BuyProductWithNullHandling(nobody, nothing);
+
+// Coalescating Operator ( ?? ) - Null Check
+
+void BuyProductWithNullCoalescatingOperator(Person person, Product product)
+{
+    person.Talk($"{person.Name} is buying {product.Name}");
+    person.BuyProduct(product);
+}
+
+// Uncomment this line and you will see that nobody is not going to take the Unknown person
+//nobody = new Person("Angel", 21, 100);
+BuyProductWithNullCoalescatingOperator(nobody ?? new Person("Unknown", 20), nothing ?? new Product("Unknown", 0));
+
+
+// Null-Coalescating Assignment Operator ( ??= )
+// Only assigns if the left side is null
+
+Person somebody = new Person("Jim", 20, 150);
+somebody ??= new Person("Unknown", 20);
+
+Person nobodyAgain = null;
+nobodyAgain ??= new Person("Unknown", 21);
+
+Console.WriteLine(somebody.Name);
+Console.WriteLine(nobodyAgain.Name);
 
 #endregion
