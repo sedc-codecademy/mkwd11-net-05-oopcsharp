@@ -5,7 +5,6 @@
     // If we want to invoke Separator we need to invoke it directly on the class => ex. ConsoleHelper.Separator()
     public static class ConsoleHelper
     {
-        
         public static void Separator()
         {
             Console.WriteLine();

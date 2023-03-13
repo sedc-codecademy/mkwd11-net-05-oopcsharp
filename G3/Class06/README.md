@@ -1,4 +1,4 @@
-# Homework Class 5 📒
+# Exercises Class 6 📒
 
 ## Task 1
 * You are given the following string "The whole group of G2 loves C#.They find learning this language fun and easy!". Print the text after the ".", using string methods.
@@ -31,6 +31,7 @@ Create a class User with the following:
 * Username - string
 * Password - string
 * Messages - Array of strings
+
 Create an array of users and add 3 users to it manually ( hard-coded ).
 
 Create a Console UI that will give the user two options to choose from:
