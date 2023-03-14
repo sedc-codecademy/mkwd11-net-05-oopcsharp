@@ -122,7 +122,7 @@ int[] numberArray = new int[5];
 //    without specifying number of elements in it
 
 string student = "Antonio";
-string[] nameArray = new string[] {"Martin", "Tosho", "Monika", student};
+string[] nameArray = new string[] { "Martin", "Tosho", "Monika", student };
 
 
 // 2. Declare the array by by specifying
@@ -137,7 +137,7 @@ boolArray[1] = false;
 boolArray[2] = true;
 Console.WriteLine(boolArray[2]);
 
-char[] charArray = new char[4] { 'S', 'E', 'D', 'C'};
+char[] charArray = new char[4] { 'S', 'E', 'D', 'C' };
 
 // Access an element of the array
 
@@ -154,7 +154,7 @@ Console.WriteLine(nameArray);
 Console.WriteLine(nameArray[2]);
 
 
-for(int i = 0; i < nameArray.Length; i++)
+for (int i = 0; i < nameArray.Length; i++)
 {
     Console.WriteLine(nameArray[i]);
 }
@@ -181,7 +181,7 @@ Array.Resize(ref nameArray, 10);
 nameArray[4] = "Damjan";
 Console.WriteLine(nameArray[4]);
 
-foreach(string name in nameArray)
+foreach (string name in nameArray)
 {
     Console.WriteLine(name);
 }
@@ -198,6 +198,9 @@ foreach (string name in nameArray)
 Array.Clear(nameArray);
 
 Console.WriteLine(nameArray[3]);
+
+
+
 
 #endregion
 
@@ -308,7 +311,7 @@ Console.WriteLine(nameArray[3]);
 //    sum += number;
 //}
 
-Console.WriteLine($"The sum of the numbers is: {sum}");
+//Console.WriteLine($"The sum of the numbers is: {sum}");
 
 // Exercise 6
 //string[] namesArray = new string[int.MaxValue];
@@ -332,5 +335,43 @@ Console.WriteLine($"The sum of the numbers is: {sum}");
 //{
 //    Console.WriteLine(namesArray[i]);
 //}
+
+#endregion
+
+
+
+
+#region Matrix (Array of arrays)
+
+int[][] arrayOfArrays = new int[3][]
+{
+new int[] { 1, 2, 3 } ,
+new int[] { 2, 10 } ,
+new int [] { 3, 5, 7, 9 }
+};
+
+
+for (int i = 0; i < arrayOfArrays.Length; i++)
+{
+    for (int j = 0; j < arrayOfArrays[i].Length; j++)
+    {
+        Console.Write(arrayOfArrays[i][j]);
+    }
+}
+
+
+// From Class 2:
+// Implicit type variables in C#
+// The implicit type part of these variables
+// means that they get their type later by deducting
+// what value we put in at compile time.
+
+var num = "test";
+
+
+
+// Compile time error!!! The app will not be started
+// if you don't fix this
+//int number = "martin";
 
 #endregion
