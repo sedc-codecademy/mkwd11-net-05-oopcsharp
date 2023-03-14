@@ -88,6 +88,13 @@ namespace Class04_Demo
 
             string fileName = "text.txt";
             string s5 = @$"C:\SEDC\2022-2023\[5] C# Basic\{fileName}";
+
+            decimal amountDollars = 10000.50M;
+            Console.WriteLine($"{amountDollars:C}");
+            Console.WriteLine(amountDollars.ToString("C", new CultureInfo("en-US")));
+
+            decimal percent = 0.3333M;
+            Console.WriteLine($"{percent:P}");
         }
     }
 }
