@@ -58,3 +58,20 @@ Console.WriteLine(myBirthDateAndHour);
 Console.WriteLine(formattedDate);
 
 
+
+#region Class exercise 4
+DateTime threeDaysFromToday = DateTime.Now.AddDays(3);
+DateTime oneMonthFromNow = DateTime.Now.AddMonths(1);
+DateTime oneMonthAndThreeDaysFromNow = DateTime.Now.AddMonths(1).AddDays(3);
+DateTime oneYearAndTwoMonthsFromNow = DateTime.Now.AddYears(1).AddMonths(2);
+int currentMonth = DateTime.Now.Month;
+int currentYear = DateTime.Now.Year;
+
+Console.WriteLine(threeDaysFromToday);
+Console.WriteLine(oneMonthFromNow);
+Console.WriteLine(oneMonthAndThreeDaysFromNow);
+Console.WriteLine(oneYearAndTwoMonthsFromNow);
+Console.WriteLine(currentMonth);
+Console.WriteLine(currentYear);
+
+#endregion

@@ -110,7 +110,4 @@ else
 {
     Console.WriteLine("Ooops!!! Something went wrong!");
 }
-
-
-
 #endregion
