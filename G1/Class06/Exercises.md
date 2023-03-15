@@ -46,7 +46,7 @@ Create a class User with the following:
 * Id - int
 * Username - string
 * Password - string
-* Messages - Array of strings
+* Messages - Array of strings  
 Create an array of users and add 3 users to it manually ( hard-coded ).
 
 Create a Console UI that will give the user two options to choose from:
