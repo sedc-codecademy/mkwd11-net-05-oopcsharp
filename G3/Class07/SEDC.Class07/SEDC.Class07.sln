@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Class07.Inheritance", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Class07.Enumerations", "SEDC.Class07.Enumerations\SEDC.Class07.Enumerations.csproj", "{E77015B0-06A3-418E-BDA9-FE0DD3704416}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Class07.Services", "SEDC.Class07.Services\SEDC.Class07.Services.csproj", "{83725280-42FA-42EB-925D-130801E6D719}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E77015B0-06A3-418E-BDA9-FE0DD3704416}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E77015B0-06A3-418E-BDA9-FE0DD3704416}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E77015B0-06A3-418E-BDA9-FE0DD3704416}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83725280-42FA-42EB-925D-130801E6D719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83725280-42FA-42EB-925D-130801E6D719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83725280-42FA-42EB-925D-130801E6D719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83725280-42FA-42EB-925D-130801E6D719}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
