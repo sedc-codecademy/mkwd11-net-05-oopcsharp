@@ -5,7 +5,7 @@ string academy = "Web programming";
 
 
 // Concatenation
-string concatenatedAcademy = academyName + " academy for " +  academy;
+string concatenatedAcademy = academyName + " academy for " + academy;
 
 // String interpolation
 string interpolatedAcademy = $"{academyName} academy for {academy}";
@@ -75,3 +75,32 @@ Console.WriteLine(subString2);
 
 string message = "     Hello there!!   ";
 Console.WriteLine(message.Trim());
+
+
+#region Class exercise 3 
+
+void Substrings(int numberOfCharacters)
+{
+    string message = "Hello from SEDC Codecademy 2023";
+    string outputString = message.Substring(0, numberOfCharacters);
+
+    Console.WriteLine(@$"The first {numberOfCharacters} characters from the message ""{message}"" are: ""{outputString}"" and its length is {outputString.Length}");
+}
+
+
+while (true)
+{
+    Console.WriteLine("Please enter number of characters: ");
+    bool canParseUserInput = int.TryParse(Console.ReadLine(), out int userInput);
+    if(canParseUserInput && userInput > 0)
+    {
+        Substrings(userInput);
+        break;
+    }
+    else
+    {
+        continue;
+    }
+}
+
+#endregion

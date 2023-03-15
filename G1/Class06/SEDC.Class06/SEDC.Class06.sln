@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Exercise.Car", "SEDC.Exercises\SEDC.Exercise.Car.csproj", "{B882F326-99CE-432E-9B20-317B3F021796}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B882F326-99CE-432E-9B20-317B3F021796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B882F326-99CE-432E-9B20-317B3F021796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B882F326-99CE-432E-9B20-317B3F021796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B882F326-99CE-432E-9B20-317B3F021796}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0856B1BB-BDBC-412C-AAEA-F677645F904B}
+	EndGlobalSection
+EndGlobal
