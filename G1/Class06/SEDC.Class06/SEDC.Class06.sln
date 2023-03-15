@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Exercise_2", "SEDC.Exe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Exercise_3", "SEDC.Exercise_3\SEDC.Exercise_3.csproj", "{B4A1CA8F-F6AA-4388-AA40-F183E7B13AF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Exercise_4", "SEDC.Exercise_4\SEDC.Exercise_4.csproj", "{66D7E2AB-96BD-42A9-8339-0562F1D24A42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B4A1CA8F-F6AA-4388-AA40-F183E7B13AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4A1CA8F-F6AA-4388-AA40-F183E7B13AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4A1CA8F-F6AA-4388-AA40-F183E7B13AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D7E2AB-96BD-42A9-8339-0562F1D24A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D7E2AB-96BD-42A9-8339-0562F1D24A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D7E2AB-96BD-42A9-8339-0562F1D24A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D7E2AB-96BD-42A9-8339-0562F1D24A42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
