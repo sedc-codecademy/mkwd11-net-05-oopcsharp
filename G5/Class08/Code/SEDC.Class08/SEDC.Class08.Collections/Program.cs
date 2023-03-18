@@ -25,6 +25,7 @@ void GoThroughIntArrayCollection(int[] collection, string name)
     Console.WriteLine("========================");
 }
 
+// IEnumerable ( abstraction ) - something that can be interated 
 void GoThroughCollection(IEnumerable collection, string name)
 {
     Console.WriteLine($"Collection {name} items:");
@@ -39,6 +40,8 @@ void GoThroughCollection(IEnumerable collection, string name)
 
 
 #region Non-Generic Collections
+
+
 
 // Arrays
 
@@ -58,8 +61,12 @@ var myObj = new
 };
 
 
-// ArrayList
+// Non - generic collections, are collections that can store objects of any type.
 // They are not type-safe
+// Is more flexibility better?
+// On the short run more flexibility seems better, but on the long run it will be difficult to manipulate with the collection.
+
+// ArrayList
 ArrayList arrayList = new ArrayList() { 1, 2, 3, "John", '!', 2.15 };
 arrayList.Add(intArray);
 arrayList.Add(doubleArray);
@@ -78,6 +85,9 @@ Console.WriteLine();
 
 
 #region Generic Collection
+
+// Generic collections are strongly typed collections that allow you to store a specific type of object.
+// The advantage of generic collections is that they provide type safety
 
 // List
 
@@ -105,7 +115,7 @@ Console.WriteLine($"Element with index 1 inside listOfIntegers is {listOfInteger
 Console.WriteLine();
 
 
-// NON-INDEXABLE COLLECTIONS
+// NON-INDEXABLE COLLECTIONS -> We cannot access elemets by index inside these collections
 
 // Dictionary (Key/Value Pairs)
 
@@ -126,17 +136,26 @@ Dictionary<string, int> phoneBook = new Dictionary<string, int>()
     { "Anna", 075123321 }
 };
 
+
 GoThroughCollection(phoneBook, "phonebook");
+
+// Get only keys
 GoThroughCollection(phoneBook.Keys, "phonebook keys");
+
+// Get only values
 GoThroughCollection(phoneBook.Values, "phonebook values");
 
+// Get value by key
 Console.WriteLine($"Mikes number: {phoneBook["Mike"]}");
 
 Console.WriteLine();
 
-// ORDERED COLLECTION
+// ORDERED COLLECTION -> There is a specific order how we add and how we remove elements from these collections
 
 // Queue (First in first out - FIFO)
+
+// Cannot directly add elements to the queue
+// Queue<int> someQueue = new Queue<int>() { 1, 2, 3, 4, 5 }
 
 Queue<int> someQueue = new Queue<int>();
 someQueue.Enqueue(1);
@@ -155,6 +174,9 @@ Console.WriteLine();
 
 
 // Stack (Last in first out - LIFO)
+
+// Cannot directly add elements to the stack
+// Stack<string> someStack = new Stack<string>() { "word1", "word2" };
 
 Stack<string> chair = new Stack<string>();
 chair.Push("Green T-Shirt");
@@ -192,7 +214,11 @@ Console.WriteLine();
 
 #endregion
 
+
 #region Common Problem
+// We need to add default value to collection property, otherwise it will be null and will throw exception when we use methods on top of it (ex. Add / Remove)
+
+// null.Add() / null.Remove() will throw exception
 
 Dog dog = new Dog("Max");
 dog.FavouriteFoods.Add("Beef");
