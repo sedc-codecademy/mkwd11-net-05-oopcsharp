@@ -21,6 +21,7 @@ namespace SEDC.Class08.LINQ.ExerciseData
             LastName = lastName;
             Age = age;
             FavoriteMusicType = favoritMusic;
+            FavoriteSongs = new List<Song>();
         }
 
         public string GetFullName()
