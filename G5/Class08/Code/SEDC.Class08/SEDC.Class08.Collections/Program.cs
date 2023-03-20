@@ -228,3 +228,33 @@ foreach (string food in dog.FavouriteFoods)
     Console.WriteLine(food);
 
 #endregion
+
+// Exercise 1
+#region Exercise 1
+Console.WriteLine();
+Console.WriteLine("======= Exercise 1 =======");
+
+Dictionary<string, long> phoneBookDictionary = new Dictionary<string, long>()
+{
+    {"Bob", 70993241 },
+    {"Will", 71234232 },
+    {"Meg", 72778900 },
+    {"Jill", 71562110 },
+    {"Buck", 71119804 }
+};
+
+Console.WriteLine("Enter name:");
+PrintPhone(phoneBookDictionary, Console.ReadLine());
+
+
+void PrintPhone(Dictionary<string, long> phoneBook, string name)
+{
+    if (!phoneBook.ContainsKey(name))
+    {
+        Console.WriteLine($"There is no {name} in this phoneBook. Sorry!");
+        return;
+    }
+    Console.WriteLine($"{name}'s phone is: 0{phoneBook[name]}");
+}
+
+#endregion
