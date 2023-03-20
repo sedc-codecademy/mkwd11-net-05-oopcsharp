@@ -229,7 +229,6 @@ foreach (string food in dog.FavouriteFoods)
 
 #endregion
 
-// Exercise 1
 #region Exercise 1
 Console.WriteLine();
 Console.WriteLine("======= Exercise 1 =======");
