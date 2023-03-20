@@ -53,3 +53,48 @@ FansArray.Add(Stefan);
 FansArray.Add(Maria);
 FansArray.Add(Jane);
 #endregion
+
+#region LINQ
+
+//Jerry
+Console.WriteLine($"{Jerry.GetFullName()} favorite songs are:");
+Jerry.FavoriteSongs = Songs.Where(x => x.Title.StartsWith("B")).ToList();
+foreach (var item in Jerry.FavoriteSongs)
+{
+    Console.WriteLine($"{item.Title}");
+}
+Console.WriteLine();
+
+//Maria
+Console.WriteLine($"{Maria.GetFullName()} favorite songs are:");
+Maria.FavoriteSongs = Songs.Where(song => song.Length >= 360).ToList();
+foreach (var item in Maria.FavoriteSongs)
+{
+    Console.WriteLine($"{item.Title} with length: {item.Length}");
+}
+Console.WriteLine();
+
+//Jane
+Console.WriteLine($"{Jane.GetFullName()} favorite songs are:");
+Jane.FavoriteSongs = Songs.Where(x => x.Genre == Genre.Rock).ToList();
+Jane.GetFavSongs();
+
+Console.WriteLine();
+
+//Stefan
+Console.WriteLine($"{Stefan.GetFullName()} favorite songs are:");
+Stefan.FavoriteSongs = (Songs.Where(song => song.Length < 180 && song.Genre == Genre.Hip_Hop)).ToList();
+Stefan.GetFavSongs();
+
+
+Console.WriteLine();
+Console.WriteLine();
+//Select from Persons array
+var peopleWithFourOrMoreSongs = FansArray.Where(fan => fan.FavoriteSongs.Count() >= 4).ToList();
+Console.WriteLine("People that have 4 or more favorite songs are:");
+foreach (var person in peopleWithFourOrMoreSongs)
+{
+    Console.WriteLine(person.GetFullName());
+}
+Console.WriteLine();
+#endregion

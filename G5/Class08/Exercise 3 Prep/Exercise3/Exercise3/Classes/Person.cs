@@ -9,7 +9,7 @@ namespace Exercise3.Classes
         public string LastName { get; set; }
         public int Age { get; set; }
         public Genre FavoriteMusicType { get; set; }
-        public List<Song> FavoriteSongs { get; set; }
+        public List<Song> FavoriteSongs { get; set; } = new List<Song>();
 
         public Person(string firstName, string lastName, int age, Genre favoritMusic)
         {
