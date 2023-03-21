@@ -58,3 +58,99 @@ List<string> namesOfPeopleOlderThan30 = people.Where(person => person.Age > 30).
 
 Console.WriteLine("Names of people older than 30:");
 namesOfPeopleOlderThan30.ForEach(name => Console.WriteLine(name));
+
+
+List<Person> morePeople = new List<Person>()
+{
+    new Person("Bob", 25),
+    new Person("Zack", 18),
+    new Person("Gary", 18)
+};
+
+
+Console.WriteLine("Before Adding");
+people.ForEach(person => person.GetInfo());
+
+Console.WriteLine();
+
+people.AddRange(morePeople);
+
+Console.WriteLine();
+
+Console.WriteLine("After Adding");
+people.ForEach(person => person.GetInfo());
+
+Console.WriteLine();
+
+// First & FirstOrDefault
+
+Person first18YearOld = people.First(person => person.Age == 18);
+first18YearOld.GetInfo();
+
+Console.WriteLine();
+
+// Throws Error if no person is found
+//Person first99YearOld = people.First(person => person.Age == 99);
+//first99YearOld.GetInfo();
+
+Person firstOrDefault18YearOld = people.FirstOrDefault(person => person.Age == 18);
+firstOrDefault18YearOld.GetInfo();
+
+Console.WriteLine();
+
+Person firstOrDefault99YearOld = people.FirstOrDefault(person => person.Age == 99);
+
+if (firstOrDefault99YearOld != null)
+{
+    firstOrDefault99YearOld.GetInfo();
+}
+else
+{
+    Console.WriteLine("No such person found!");
+}
+
+Console.WriteLine();
+
+// Last & LastOrDefault
+
+Person last18YearOld = people.Last(person => person.Age == 18);
+last18YearOld.GetInfo();
+
+Console.WriteLine();
+
+//Person last99YearOld = people.Last(person => person.Age == 99);
+//last99YearOld.GetInfo();
+
+Person lastOrDefault18YearOld = people.LastOrDefault(person => person.Age == 18);
+lastOrDefault18YearOld?.GetInfo();
+
+Console.WriteLine();
+
+Person lastOrDefault99YearOld = people.LastOrDefault(person => person.Age == 99);
+
+if (lastOrDefault99YearOld != null)
+{
+    lastOrDefault99YearOld.GetInfo();
+} else
+{
+    Console.WriteLine("No such person found!");
+}
+
+Console.WriteLine("Alternative Way to use First, FirstOrDefault, Last & LastOrDefault");
+
+var peopleWith18Years = people.Where(x => x.Age == 18).ToList();
+peopleWith18Years.ForEach(person => person.GetInfo());
+
+Console.WriteLine("==============");
+
+Person first18YearOldAlternativeWay = peopleWith18Years.FirstOrDefault();
+first18YearOldAlternativeWay.GetInfo();
+
+Console.WriteLine("================");
+
+Person firstPerson = people.FirstOrDefault();
+firstPerson.GetInfo();
+
+Console.WriteLine("================");
+
+Person firstPersonWith18Years = people.Where(x => x.Age == 18).LastOrDefault();

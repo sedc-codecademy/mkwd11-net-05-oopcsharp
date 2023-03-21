@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Class09.Exception", "SEDC.Class09.Exception\SEDC.Class09.Exception.csproj", "{9DE52A78-F9A3-430F-BE5F-804EF0D12D02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Class09.ExpectionsApp", "SEDC.Class09.ExpectionsApp\SEDC.Class09.ExpectionsApp.csproj", "{B7F3B1EF-E74F-43B9-A8E3-BBF0D2E7FE0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DE52A78-F9A3-430F-BE5F-804EF0D12D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE52A78-F9A3-430F-BE5F-804EF0D12D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE52A78-F9A3-430F-BE5F-804EF0D12D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE52A78-F9A3-430F-BE5F-804EF0D12D02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7F3B1EF-E74F-43B9-A8E3-BBF0D2E7FE0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7F3B1EF-E74F-43B9-A8E3-BBF0D2E7FE0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7F3B1EF-E74F-43B9-A8E3-BBF0D2E7FE0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7F3B1EF-E74F-43B9-A8E3-BBF0D2E7FE0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4AFFDD0-BAF6-45BA-876A-BFAD3CF950F5}
+	EndGlobalSection
+EndGlobal
