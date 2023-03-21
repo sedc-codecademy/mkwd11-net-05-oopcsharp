@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Exercise3.Enums;
 
-namespace SEDC.Class08.LINQ.ExerciseData
+namespace Exercise3.Classes
 {
     public class Person
     {
@@ -13,7 +9,7 @@ namespace SEDC.Class08.LINQ.ExerciseData
         public string LastName { get; set; }
         public int Age { get; set; }
         public Genre FavoriteMusicType { get; set; }
-        public List<Song> FavoriteSongs { get; set; }
+        public List<Song> FavoriteSongs { get; set; } = new List<Song>();
 
         public Person(string firstName, string lastName, int age, Genre favoritMusic)
         {
@@ -21,7 +17,6 @@ namespace SEDC.Class08.LINQ.ExerciseData
             LastName = lastName;
             Age = age;
             FavoriteMusicType = favoritMusic;
-            FavoriteSongs = new List<Song>();
         }
 
         public string GetFullName()

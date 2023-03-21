@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SongsApp", "SongsApp\SongsApp.csproj", "{F12D198A-BDD1-40C8-8FB6-B27155D5F19F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SongsApp.Domain", "SongsApp.Domain\SongsApp.Domain.csproj", "{B04E3D99-1750-430F-A1D5-35CEF15AAE5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F12D198A-BDD1-40C8-8FB6-B27155D5F19F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F12D198A-BDD1-40C8-8FB6-B27155D5F19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F12D198A-BDD1-40C8-8FB6-B27155D5F19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F12D198A-BDD1-40C8-8FB6-B27155D5F19F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B04E3D99-1750-430F-A1D5-35CEF15AAE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B04E3D99-1750-430F-A1D5-35CEF15AAE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B04E3D99-1750-430F-A1D5-35CEF15AAE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B04E3D99-1750-430F-A1D5-35CEF15AAE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98765A48-A902-4BD1-8D32-3C64565E1C07}
+	EndGlobalSection
+EndGlobal
