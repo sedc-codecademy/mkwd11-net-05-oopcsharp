@@ -52,10 +52,36 @@ namespace Class08_Exercise02
                                                 song15, song16, song17, song18, song19, song20,
                                                 song21, song22, song23, song24, song25, song26, song27, song28, song29, song30, song31 };
 
+            jerry.FavoriteSongs = songs.Where(x => x.Title.StartsWith("B")).ToList();
+            maria.FavoriteSongs = songs.Where(x => x.Length > 360).ToList();
+            jane.FavoriteSongs = songs.Where(x => x.Genre == GenreEnum.Rock).ToList();
+            stefan.FavoriteSongs = songs.Where(x => x.Genre == GenreEnum.Hip_Hop && x.Length < 180).ToList();
+
+
             fansArray.Add(jerry);
             fansArray.Add(stefan);
             fansArray.Add(maria);
             fansArray.Add(jane);
+
+            List<Person> filteredList = fansArray.Where(x => x.FavoriteSongs.Count >= 4).ToList();
+
+            filteredList.ForEach(x =>
+            {
+                Console.WriteLine($"-------{x.FirstName} {x.LastName}------");
+
+                //foreach(Song song in x.FavoriteSongs)
+                //{
+                //    Console.WriteLine(song.Title);
+                //}
+
+                x.FavoriteSongs.ForEach(y => Console.WriteLine(y.Title));
+
+                //x.FavoriteSongs.Select(y =>
+                //{
+                //    Console.WriteLine(y.Title);
+                //    return y;
+                //}).ToList();
+            });
         }
     }
 }

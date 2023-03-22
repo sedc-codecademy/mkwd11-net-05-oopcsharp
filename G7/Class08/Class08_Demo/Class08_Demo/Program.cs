@@ -101,7 +101,7 @@
                 LastName = "2"
             });
 
-            foreach(Student s in studentList)
+            foreach (Student s in studentList)
             {
                 Console.WriteLine(s.GetFullName());
             }
@@ -139,10 +139,10 @@
                 new List<string> { "Student1 G2", "Student2 G2" , "Student3 G2" , "Student4 G2" }
             };
 
-            foreach(List<string> group in groups)
+            foreach (List<string> group in groups)
             {
                 Console.WriteLine("-------------------------");
-                foreach(string student in group)
+                foreach (string student in group)
                 {
                     Console.WriteLine(student);
                 }
@@ -190,6 +190,98 @@
             string c5 = cars.Peek();
             bool successPeekCar = cars.TryPeek(out string car5);
             #endregion
+
+            Dictionary<string, List<string>> categoryProduct = new Dictionary<string, List<string>>()
+            {
+                { "Fruits", new List<string> { "Apple", "Banana", "Peach", "Orange"} },
+                {"Sweets", new List<string> {"Chocolate", "Caramel"} }
+            };
+
+            categoryProduct.Add("Meat", new List<string> { "Pork", "Beef", "Lamb" });
+
+            List<string> fruits = categoryProduct["Fruits"];
+
+            foreach (KeyValuePair<string, List<string>> category in categoryProduct)
+            {
+                Console.WriteLine($"---------{category.Key}--------");
+
+                foreach (string product in category.Value)
+                {
+                    Console.WriteLine(product);
+                }
+            }
+
+            Queue<string> bankQueue = new Queue<string>();
+
+            bankQueue.Enqueue("Risto");
+            bankQueue.Enqueue("Tijana");
+            bankQueue.Enqueue("Marko");
+
+            //Bank opens starts to work with client
+
+            string firstClient = bankQueue.Dequeue();
+            string secondClient = bankQueue.Dequeue();
+
+            //string numberInput = Console.ReadLine();
+            //int number;
+
+            //bool successParse = int.TryParse(numberInput, out number);
+
+            //if(successParse == true)
+            //{
+            //    Console.WriteLine("You have entered correct value");
+            //    //proceed with the app
+            //} else
+            //{
+            //    Console.WriteLine("Wrong input");
+            //}
+
+            //if (!int.TryParse(Console.ReadLine(), out int number))
+            //{
+            //    Console.WriteLine("Wrong input");
+            //}
+
+            //Console.WriteLine("You have entered correct value");
+            //proceed with the app
+
+            //LINQ
+            List<string> sublistAnimals = animals.Where(x => x.StartsWith("a")).ToList();
+
+            List<string> countries = new List<string> { "Macedonia", "Greece", "Spain", "Serbia", "France", "Sweden", "USA" };
+
+            List<string> countriesStartingWithS = countries.Where(country => country.StartsWith("S") && country.Length <= 5).ToList();
+            List<string> countriesHavingMoreThan8LettersOREndWithE = countries.Where(x => x.Length > 8 || x.EndsWith("e")).ToList();
+            List<string> countriesStartingWithR = countries.Where(x => x.StartsWith("R")).ToList();
+
+            List<string> orderList = countries.OrderBy(x => x).ToList();
+            List<string> orderListDesc = countries.OrderByDescending(x => x).ToList();
+
+            string firstCountryStartsWithS = countries.First(x => x.StartsWith("S"));
+            string lastCountryStartsWithS = countries.Last(x => x.StartsWith("S"));
+
+            //string noneCountry = countries.First(x => x.StartsWith("R")); => throws an error because none of the elements starts with R
+            string noneCountry = countries.FirstOrDefault(x => x.StartsWith("R"));
+            string noneCountryLast = countries.LastOrDefault(x => x.StartsWith("R"));
+
+
+            List<string> newList = new List<string>();
+
+            foreach(string country in countries)
+            {
+                newList.Add($"{country}.");
+            }
+
+            List<string> newLinqList = countries.Select(country => $"{country}.").ToList();
+            //countries = countries.Select(country => $"{country}.").ToList(); -> example if you want to change the orginal list
+
+            List<string> listSameAsTheOrginalOne = countries.Select(x => { Console.WriteLine(x); return x; }).ToList();
+
+            List<string> inputedNumbers = new List<string> { "1", "11", "23", "44" };
+            List<int> parsedInputList = inputedNumbers.Select(x => int.Parse(x)).ToList();
+
+            int maxNumber = parsedInputList.Max();
+            int minNumber = parsedInputList.Min();
+            double average = parsedInputList.Average();
         }
     }
 }
